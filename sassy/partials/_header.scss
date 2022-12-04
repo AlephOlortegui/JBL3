@@ -25,7 +25,6 @@ header{
             right: 0;
             opacity: 1;
         }
-    
 
     ul{
         @include flexConfig(space-around);
@@ -40,7 +39,6 @@ header{
             opacity: 0;
             transform:translate(80px);
             transition: $transition;
-
 
             a{
                 color: $lightgray-clr;
@@ -96,5 +94,4 @@ header{
     &.active .l3{
         transform: rotate(45deg) translate(-5px,-6px);
     }
-
 }

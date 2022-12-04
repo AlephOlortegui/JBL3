@@ -231,9 +231,14 @@ header .logo img {
   }
 }
 
+.speakers {
+  padding-top: 1em;
+  padding-bottom: 5rem;
+}
 .speakers h1 {
   display: inline-block;
   margin: 12px 10px 10px;
+  padding-left: 1em;
 }
 .speakers #checkbox {
   width: 60px;
@@ -292,6 +297,10 @@ header .logo img {
 }
 
 .newsletter {
+  position: relative;
+  width: 80%;
+  margin: -3rem auto;
+  border-radius: 0.3em;
   background-color: #eeeeee;
   display: flex;
   align-items: center;
@@ -324,12 +333,13 @@ header .logo img {
 }
 
 .video {
+  padding-top: 5rem;
   background-color: #8AA8B0;
   color: #fff;
 }
 .video h1 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-weight: 400;
 }
 .video_perks {
@@ -437,7 +447,7 @@ header .logo img {
   }
   .newsletter h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .newsletter #email {
     width: 200px;

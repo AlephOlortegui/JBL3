@@ -6,7 +6,6 @@ const body = document.querySelector('body')
 const checkbox = document.getElementById('checkbox');
 const products = document.querySelector('.products');
 
-
 function clickMenu() {
     if(window.innerWidth < 768){
         burger.classList.toggle('active')
@@ -17,7 +16,7 @@ function clickMenu() {
                 li.style.animation = '';
             } //otherwise set the animation
             else{
-                li.style.animation = `showLi 0.5s ease forwards ${index/5 + 0.6}s`
+                li.style.animation = `showLi 0.5s ease forwards ${index/5 + 0.3}s`
             }
         })
         body.classList.toggle('stop-scrolling')

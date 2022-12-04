@@ -1,8 +1,14 @@
 .speakers{
+    padding-top: 1em;
+    //overlaping
+    padding-bottom: 5rem;
+
     h1{
         display: inline-block;
         margin: 12px 10px 10px;
+        padding-left: 1em;
     }
+
     #checkbox{
         @include dimension(60px,60px);
         -webkit-appearance: none;
