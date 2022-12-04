@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.setPadd {
+  padding: 2em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 0.5em 2em;
+  position: relative;
+}
+header .logo img {
+  width: 3em;
+}
+
+.burger {
+  position: absolute;
+  top: 2.8vh;
+  right: 8vw;
+  cursor: pointer;
+}
+.burger div {
+  width: 24px;
+  height: 3px;
+  background-color: #313732;
+  margin: 5px;
+  transition: 0.3s linear;
+}
+.burger:hover div {
+  background-color: #F26101;
+}
+
+.showcase {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.showcase_left {
+  text-align: center;
+}
+.showcase_left h1 {
+  font-size: 2.1rem;
+}
+.showcase_left p {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  color: #313732;
+}
+.showcase_left a.ctaBtn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #F26101;
+  border: 1px solid #F26101;
+  border-radius: 10px 20px 20px 0;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.showcase_left a.ctaBtn:hover {
+  color: #fff;
+  background-color: #F26101;
+}
+.showcase_right {
+  height: 47vh;
+  display: flex;
+  justify-content: center;
+}
+.showcase_right img {
+  height: 100%;
+}
+.showcase_right img:last-child {
+  display: none;
+}
+
+.speakers h1 {
+  display: inline-block;
+  margin: 12px 10px 10px;
+}
+.speakers #checkbox {
+  width: 60px;
+  height: 60px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 5px 15px rgba(70, 70, 70, 0.12);
+  border-radius: 50%;
+  border: 3px solid #ececec;
+  outline: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.speakers #checkbox::after {
+  content: "\f028";
+  font-family: fontAwesome;
+  font-size: 1.4rem;
+  color: #7a7a7a;
+}
+.speakers #checkbox:checked {
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 5px 15px rgba(70, 70, 70, 0.12), inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.speakers #checkbox:checked::after {
+  color: #F26101;
+}
+
+.products_wrapper {
+  display: grid;
+  grid-template-columns: 400px;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.products_wrapper .card {
+  text-align: center;
+  cursor: pointer;
+}
+.products_wrapper .card img {
+  transform: scale(0.8);
+}
+.products_wrapper .card:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.products_wrapper .card .title, .products_wrapper .card .price {
+  margin-bottom: 8px;
+}
+
+.newsletter {
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.newsletter h2 {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.newsletter #email {
+  width: 200px;
+  height: 2rem;
+  margin-right: 0;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #7a7a7a;
+  border-right: 0;
+  outline: none;
+  padding: 1.25em 0.9em;
+}
+.newsletter #submit {
+  margin-left: -6px;
+  padding: 0.75em 0.9em;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  outline: none;
+  color: #fff;
+  background-color: #F26101;
+  cursor: pointer;
+}
+
+.video {
+  background-color: #8AA8B0;
+  color: #fff;
+}
+.video h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.video_perks {
+  display: none;
+}
+.video_wrapper {
+  height: 50vh;
+}
+.video_wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.social {
+  background-color: #313732;
+  color: #fff;
+}
+.social_links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.social_links h3 {
+  font-weight: 500;
+}
+.social_links ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social_links ul li {
+  list-style: none;
+  margin: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.social_links ul li i {
+  font-size: 2em;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.social p {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1.6rem;
+}/*# sourceMappingURL=style.css.map */

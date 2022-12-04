@@ -1,0 +1,38 @@
+.social{
+    background-color: $gray-clr;
+    color: $white-clr;
+
+    &_links{
+        @include flexConfig(flex-start);
+        flex-wrap: wrap;
+
+        h3{
+            font-weight: 500;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+
+            li{
+                list-style: none;
+                margin: 1rem;
+                cursor: pointer;
+
+                @include flexConfig(flex-start);
+
+                i{
+                    font-size: 2em;
+                    display: inline-block;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+        font-weight: 500;
+        margin-top: 1.6rem; 
+    }
+}

@@ -1,0 +1,47 @@
+.showcase{
+    @include flexConfig(flex-start);
+    flex-direction: column;
+
+    &_left{
+        text-align: center;
+
+        h1{
+            font-size: 2.1rem;
+        }
+        p{
+            font-size: 1rem;
+            margin-top: .8rem;
+            color: $gray-clr;
+        }
+
+        a.ctaBtn{
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px;
+            font-size: .8rem;
+            text-decoration: none;
+            color: $orange-clr;
+            border: 1px solid $orange-clr;
+            border-radius: 10px 20px 20px 0;
+            cursor: pointer;
+            transition: $transition;
+
+            &:hover{
+                color: $white-clr;
+                background-color: $orange-clr;
+            }
+        }
+    }
+
+    &_right{
+        height: 47vh;
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 100%;
+        }
+
+        img:last-child{display: none;}
+    }
+}

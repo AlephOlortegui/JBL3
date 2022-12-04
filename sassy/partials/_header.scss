@@ -1,0 +1,28 @@
+header{
+    @include flexConfig(center);
+    box-shadow: $shadow;
+    padding: .5em 2em;
+    position: relative;
+
+    .logo img{
+        width: 3em;
+    }
+}
+
+.burger{
+    position: absolute;
+    top: 2.8vh;
+    right: 8vw;
+    cursor: pointer;
+    
+    div{
+        @include dimension(24px, 3px);
+        background-color: $gray-clr;
+        margin: 5px;
+        transition: $transition;
+    }
+
+    &:hover div{
+        background-color: $orange-clr;
+    }
+}

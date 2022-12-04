@@ -1,0 +1,19 @@
+.video{
+    background-color: $pewterBlue-clr;
+    color: $white-clr;
+    h1{
+        text-align: center;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    &_perks{
+        display: none;
+    }
+    &_wrapper{
+        height: 50vh;
+
+        iframe{
+            @include dimension(100%, 100%);
+        }
+    }
+}
