@@ -37,3 +37,6 @@ window.addEventListener('resize', ()=>{
         lis.forEach(li => li.style.animation = '')
     }
 })
+
+const copyRight = document.getElementById('copy_right')
+copyRight.innerHTML = `&copy; JBL Speakers - ${new Date().getFullYear()}`;
