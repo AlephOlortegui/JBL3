@@ -1,10 +1,22 @@
 @import "./partials/configSetup";
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
     overflow-x: hidden;
 }
+
+// JS TOGGLE SCROLL
+.stop-scrolling { 
+    height: 100%; 
+    overflow: hidden; 
+}
+
 
 .setPadd{padding: 2em;}
 

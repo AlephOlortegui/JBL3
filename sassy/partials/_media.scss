@@ -1,0 +1,106 @@
+@media (min-width: 576px){
+    .setPadding{
+        padding: 2.3em;
+    }
+    .showcase{
+        &_right{
+            img:last-child{
+                display: block;
+            }
+        }
+    }
+    .products_wrapper{
+        grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    }
+}
+
+@media (min-width: 768px){
+    header{
+        justify-content: space-between; //7
+    }
+
+    // Nav
+    .nav{
+        position: static;//1
+        opacity: 1; //2
+        @include dimension(auto, auto); //5
+        background-color: transparent; //8
+        ul{
+            flex-direction: row; //4
+            li{
+                //3
+                opacity: 1;
+                transform: translateX(0px); 
+                a{ //9
+                    font-size: 1em;
+                    color: $dark-clr;
+
+                    &:hover{ // 10
+                        background-color: transparent;
+                        color: $orange-clr;
+                    }
+                }
+
+            }
+        }
+    }
+    .burger{
+        display: none; // 6
+    }
+
+    .showcase{
+        flex-direction: row;
+        justify-content: space-around;
+
+        &_left{
+            text-align: left;
+        }
+        h1,p,a.ctaBtn{
+            margin-left: 5%;
+        }
+        p{
+            width: 80%;
+        }
+    }
+
+    .newsletter{
+        flex-direction: row;
+    
+        h2{
+            margin: 0;
+            font-size: 1.5rem;
+        }
+    
+        #email{
+            @include dimension(200px, 2.5rem);
+        }
+    
+        #submit{
+            height: 2.5rem;
+            width: auto;
+        }
+    }
+
+    .video{
+        &_content{
+            @include flexConfig(space-around);
+        }
+        &_perks{
+            display: block;
+
+            li{
+                list-style: none;
+                margin: 1rem 0;
+
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+        &_wrapper{
+            iframe{
+                width: 50vw;
+            }
+        }
+    }
+}

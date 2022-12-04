@@ -38,6 +38,11 @@
     }
 }
 
+// active toggle class products
+.products{display: none;}
+.products.active{display: block ;}
+
+
 .products_wrapper{
     display: grid;
     grid-template-columns: 400px;
